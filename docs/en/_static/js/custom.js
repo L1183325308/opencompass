@@ -1,4 +1,4 @@
-var collapsedSections = ['Advanced Guides', 'Tools', 'User Guides', 'Notes'];
+var collapsedSections = ['111', '222', '333', '444'];
 
 $(document).ready(function () {
   $('.model-summary').DataTable({
