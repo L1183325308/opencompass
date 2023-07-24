@@ -22,9 +22,9 @@ sys.path.insert(0, os.path.abspath('../../'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'OpenCompass'
-copyright = '2023, OpenCompass'
-author = 'OpenCompass Authors'
+project = 'SUFECN'
+copyright = '2023, SUFECN'
+author = 'SUFECN Authors'
 
 # The full version, including alpha/beta/rc tags
 # version_file = '../../opencompass/version.py'
@@ -65,7 +65,7 @@ source_suffix = {
     '.md': 'markdown',
 }
 
-language = 'en'
+# language = 'en'
 
 # The master toctree document.
 root_doc = 'index'
@@ -91,7 +91,7 @@ html_theme_options = {
     'menu': [
         {
             'name': 'GitHub',
-            'url': 'https://github.com/InternLM/opencompass'
+            'url': 'https://github.com/L1183325308/opencompass'
         },
     ],
     # Specify the language of shared menu
