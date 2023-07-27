@@ -10,8 +10,6 @@ To help you quickly familiarized with OpenCompass, we recommend you to walk thro
 
 - Then learn its basic usage through the UserGuides_.
 
-- If you want to tune the prompts, refer to the Prompt_.
-
 - If you want to customize some modules, like adding a new dataset or model, we have provided the AdvancedGuides_.
 
 - There are more handy tools, such as prompt viewer and lark bot reporter, all presented in Tools_.
