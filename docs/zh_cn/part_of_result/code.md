@@ -1,5 +1,7 @@
 # 运行脚本
 
+FIN-EVAL代码可在[Github](https://github.com/SJTU-LIT/ceval)上获得。
+
 ## 准备数据
 从F-Eval官方指定路径下载评测数据集，并解压至`data`文件夹：
 
