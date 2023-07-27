@@ -41,4 +41,9 @@ python eval.py \
 ```
 
 ## 参数说明
+- `model_path`：待评测模型所在目录（合并LoRA后的HF格式模型）
+- `model_path`：待评测模型所在目录（合并LoRA后的HF格式模型）
+- `model_path`：待评测模型所在目录（合并LoRA后的HF格式模型）
+- `model_path`：待评测模型所在目录（合并LoRA后的HF格式模型）
 
+## 输出结果
