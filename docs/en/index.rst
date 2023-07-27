@@ -39,10 +39,10 @@ We always welcome *PRs* and *Issues* for the betterment of OpenCompass.
 .. _AdvancedGuides:
 .. toctree::
    :maxdepth: 1
-   :caption: Advanced Guides
+   :caption: Part of Result
 
    advanced_guides/new_dataset.md
-   advanced_guides/new_model.md
+
 
 .. _Tools:
 .. toctree::
