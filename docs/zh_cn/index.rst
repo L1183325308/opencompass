@@ -10,8 +10,6 @@ OpenCompass 上手路线
 
 - 对于一些基础使用，我们建议用户阅读 教程_ 。
 
-- 如果您想调整提示词（prompt），您可以浏览 提示词_ 。
-
 - 若您想进行更多模块的自定义，例如增加数据集和模型，我们提供了 进阶教程_ 。
 
 - 还有更多实用的工具，如提示词预览、飞书机器人上报等功能，我们同样提供了 工具_ 教程。
@@ -37,22 +35,12 @@ OpenCompass 上手路线
    user_guides/evaluation.md
    user_guides/experimentation.md
 
-.. _提示词:
+.. _结果:
 .. toctree::
    :maxdepth: 1
-   :caption: 提示词
+   :caption: 结果
 
-   prompt/few_shot.md
-   prompt/prompt_template.md
-   prompt/meta_template.md
-
-.. _进阶教程:
-.. toctree::
-   :maxdepth: 1
-   :caption: 进阶教程
-
-   advanced_guides/new_dataset.md
-   advanced_guides/new_model.md
+   part_of_result/result.md
 
 .. _工具:
 .. toctree::
