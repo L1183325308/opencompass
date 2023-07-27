@@ -11,30 +11,45 @@ FIN-EVAL是第一个全面的中文评估套件，旨在评估基础模型在中
    :caption: 开始你的第一步
 
    get_started/install.md
-   get_started/install.md
-   get_started/install.md
+   get_started/dataset_pre.md
+   get_started/quick_start.md
 
-.. _数据:
+.. _使用说明:
 .. toctree::
    :maxdepth: 1
-   :caption: 数据
+   :caption: 使用说明
 
-   dataset.md
+   user_guide/how_to_run.md
+   user_guide/config.md
+   user_guide/api_model.md
+   user_guide/custom_model.md
+   user_guide/prompt_viewer.md
 
-.. _部分评测结果与脚本:
+.. _提示词:
 .. toctree::
    :maxdepth: 1
-   :caption: 部分评测结果与脚本
+   :caption: 提示词
 
-   part_of_result/result.md
-   part_of_result/code.md
+   prompt/overview.md
+   prompt/zero_shot.md
+   prompt/few_shot.md
+   prompt/cot.md
 
-.. _联系我们:
+.. _进阶教程:
 .. toctree::
    :maxdepth: 1
-   :caption: 联系我们
+   :caption: 进阶教程
 
-   Contact_Us.md
+   advanced_guide/new_dataset.md
+   advanced_guide/new_model.md
+
+.. _其他说明:
+.. toctree::
+   :maxdepth: 1
+   :caption: 其他说明
+
+   other/how_to_submit.md
+   other/Contact_Us.md
 
 索引与表格
 ==================
