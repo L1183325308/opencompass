@@ -1,7 +1,7 @@
-欢迎来到 F-Eval ！
+欢迎来到 F-Eval ！！！
 ==========================================
 
-F-Eval 是一个全面的中文基础模型评估套件。它包含了13948个单项选择题，涵盖了52个不同的学科和四个难度级别，如下所示。您可以在数据_ 中查看我们的数据集示例，或查看我们的论文了解更多细节。
+F-Eval 是一个全面的中文基础模型评估套件。它包含了5k个单项选择题，涵盖了52个不同的学科和四个难度级别，如下所示。您可以在数据_ 中查看我们的数据集示例，或查看我们的论文（放链接？）了解更多细节。
 
 为了用户能够快速上手，我们推荐以下流程：
 
@@ -23,10 +23,10 @@ F-Eval 是一个全面的中文基础模型评估套件。它包含了13948个�
 
    get_started.md
 
-.. _教程:
+.. _数据集:
 .. toctree::
    :maxdepth: 1
-   :caption: 教程
+   :caption: 数据集
 
    user_guides/config.md
    user_guides/datasets.md
@@ -34,26 +34,19 @@ F-Eval 是一个全面的中文基础模型评估套件。它包含了13948个�
    user_guides/evaluation.md
    user_guides/experimentation.md
 
-.. _结果:
+.. _部分评测结果与脚本:
 .. toctree::
    :maxdepth: 1
-   :caption: 结果
+   :caption: 部分评测结果与脚本
 
    part_of_result/result.md
 
-.. _工具:
+.. _联系我们:
 .. toctree::
    :maxdepth: 1
-   :caption: 工具
+   :caption: 联系我们
 
    tools.md
-
-.. _其他说明:
-.. toctree::
-   :maxdepth: 1
-   :caption: 其他说明
-
-   notes/contribution_guide.md
 
 索引与表格
 ==================
