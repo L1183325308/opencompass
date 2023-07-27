@@ -18,7 +18,8 @@ FIN-EVAL是第一个全面的中文评估套件，旨在评估基础模型在中
    :maxdepth: 1
    :caption: 部分评测结果与脚本
 
-   part_of_result/result_and_code.md
+   part_of_result/result.md
+   part_of_result/code.md
 
 .. _联系我们:
 .. toctree::
