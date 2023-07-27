@@ -5,6 +5,8 @@ FIN-EVAL是第一个全面的中文评估套件，旨在评估基础模型在中
 
 您可以在 数据_ 中查看我们的数据集示例，或查看我们的论文（放链接？）了解更多细节。
 
+FIN-EVAL数据和代码可在[Github]（https://github.com/SJTU-LIT/ceval）上获得。
+
 
 .. _数据:
 .. toctree::
