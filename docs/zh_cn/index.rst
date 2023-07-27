@@ -11,11 +11,7 @@ FIN-EVAL是第一个全面的中文评估套件，旨在评估基础模型在中
    :maxdepth: 1
    :caption: 数据
 
-   user_guides/config.md
-   user_guides/datasets.md
-   user_guides/models.md
-   user_guides/evaluation.md
-   user_guides/experimentation.md
+   dataset.md
 
 .. _部分评测结果与脚本:
 .. toctree::
