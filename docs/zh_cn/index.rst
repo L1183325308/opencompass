@@ -39,7 +39,7 @@ F-Eval 是一个全面的中文基础模型评估套件。它包含了5k个单�
    :maxdepth: 1
    :caption: 部分评测结果与脚本
 
-   part_of_result/result.md
+   part_of_result/result_and_code.md
 
 .. _联系我们:
 .. toctree::
