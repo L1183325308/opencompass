@@ -12,49 +12,57 @@ To help you quickly familiarized with OpenCompass, we recommend you to walk thro
 
 - If you want to customize some modules, like adding a new dataset or model, we have provided the AdvancedGuides_.
 
-- There are more handy tools, such as prompt viewer and lark bot reporter, all presented in Tools_.
+- There are more handy tools, such as prompt viewer and lark bot reporter, all presented in Prompt_.
 
 We always welcome *PRs* and *Issues* for the betterment of OpenCompass.
+
 
 .. _GetStarted:
 .. toctree::
    :maxdepth: 1
    :caption: Get Started
 
-   get_started.md
+   get_started/install.md
+   get_started/dataset_pre.md
+   get_started/quick_start.md
 
 .. _UserGuides:
 .. toctree::
    :maxdepth: 1
    :caption: User Guides
 
-   user_guides/config.md
-   user_guides/datasets.md
-   user_guides/models.md
-   user_guides/evaluation.md
-   user_guides/experimentation.md
+   user_guide/how_to_run.md
+   user_guide/config.md
+   user_guide/api_model.md
+   user_guide/custom_model.md
+   user_guide/prompt_viewer.md
+
+.. _Prompt:
+.. toctree::
+   :maxdepth: 1
+   :caption: Prompt
+
+   prompt/overview.md
+   prompt/zero_shot.md
+   prompt/few_shot.md
+   prompt/cot.md
 
 .. _AdvancedGuides:
 .. toctree::
    :maxdepth: 1
-   :caption: Part of Result
+   :caption: Advanced Guides
 
    advanced_guides/new_dataset.md
+   advanced_guides/new_model.md
 
 
-.. _Tools:
+.. _Other Notes:
 .. toctree::
    :maxdepth: 1
-   :caption: tools
+   :caption: Other Notes
 
-   tools.md
-
-.. _Notes:
-.. toctree::
-   :maxdepth: 1
-   :caption: Notes
-
-   notes/contribution_guide.md
+   other/how_to_submit.md
+   other/Contact_Us.md
 
 Indexes & Tables
 ==================
