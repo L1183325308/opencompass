@@ -1,15 +1,15 @@
-# 安装
+# Installation
 
-1. 准备 OpenCompass 运行环境：
+1. Set up the OpenCompass environment:
 
    ```bash
    conda create --name opencompass python=3.10 pytorch torchvision pytorch-cuda -c nvidia -c pytorch -y
    conda activate opencompass
    ```
 
-   如果你希望自定义 PyTorch 版本或相关的 CUDA 版本，请参考 [官方文档](https://pytorch.org/get-started/locally/) 准备 PyTorch 环境。需要注意的是，OpenCompass 要求 `pytorch>=1.13`。
+   If you want to customize the PyTorch version or related CUDA version, please refer to the [official documentation](https://pytorch.org/get-started/locally/) to set up the PyTorch environment. Note that OpenCompass requires `pytorch>=1.13`.
 
-2. 安装 OpenCompass：
+2. Install OpenCompass:
 
    ```bash
    git clone https://github.com/InternLM/opencompass.git
@@ -17,12 +17,12 @@
    pip install -e .
    ```
 
-3. 安装 humaneval（可选）：
+3. Install humaneval (Optional)
 
-   如果你需要**在 humaneval 数据集上评估模型代码能力**，请执行此步骤，否则忽略这一步。
+   If you want to **evaluate your models coding ability on the humaneval dataset**, follow this step.
 
    <details>
-   <summary><b>点击查看详细</b></summary>
+   <summary><b>click to show the details</b></summary>
 
    ```bash
    git clone https://github.com/openai/human-eval.git
@@ -32,16 +32,16 @@
    cd ..
    ```
 
-   请仔细阅读 `human_eval/execution.py` **第48-57行**的注释，了解执行模型生成的代码可能存在的风险，如果接受这些风险，请取消**第58行**的注释，启用代码执行评测。
+   Please read the comments in `human_eval/execution.py` **lines 48-57** to understand the potential risks of executing the model generation code. If you accept these risks, uncomment **line 58** to enable code execution evaluation.
 
    </details>
 
-4. 安装 Llama（可选）：
+4. Install Llama (Optional)
 
-   如果你需要**使用官方实现评测 Llama / Llama-2 / Llama-2-chat 模型**，请执行此步骤，否则忽略这一步。
+   If you want to **evaluate Llama / Llama-2 / Llama-2-chat with its official implementation**, follow this step.
 
    <details>
-   <summary><b>点击查看详细</b></summary>
+   <summary><b>click to show the details</b></summary>
 
    ```bash
    git clone https://github.com/facebookresearch/llama.git
@@ -51,6 +51,6 @@
    cd ..
    ```
 
-   你可以在 `configs/models` 下找到所有 Llama / Llama-2 / Llama-2-chat 模型的配置文件示例。([示例](https://github.com/InternLM/opencompass/blob/eb4822a94d624a4e16db03adeb7a59bbd10c2012/configs/models/llama2_7b_chat.py))
+   You can find example configs in `configs/models`. ([example](https://github.com/InternLM/opencompass/blob/eb4822a94d624a4e16db03adeb7a59bbd10c2012/configs/models/llama2_7b_chat.py))
 
    </details>
