@@ -1,6 +1,6 @@
 # zero-shot
 
-## 1.AO（Answer-Only）
+## 1. AO（Answer-Only）
 
 AO zero-shot
 
