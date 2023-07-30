@@ -8,10 +8,7 @@ git clone *----------------
 
 data文件夹格式为:
 
------data
-
-​		----dev
-
-​		----val
-
-​		----test
+- -----data
+  - ----dev
+  - ----val
+  - ----test
