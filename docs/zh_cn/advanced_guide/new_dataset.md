@@ -23,7 +23,7 @@
 }
 ```
 
-   	如需添加新的数据集及所属类别，按上述格式进行修改subject_mapping.json文件
+如需添加新的数据集及所属类别，按上述格式进行修改subject_mapping.json文件
 
 ## 2. 确定data数据集格式
 
