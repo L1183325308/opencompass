@@ -1,9 +1,22 @@
 # 参数配置说明
 
-OpenCompass 使用 OpenMMLab 新式风格的配置文件。如果你之前熟悉 OpenMMLab 风格的配置文件，可以直接阅读
-[纯 Python 风格的配置文件（Beta）](https://mmengine.readthedocs.io/zh_CN/latest/advanced_tutorials/config.html#python-beta)
-了解新式配置文件与原配置文件的区别。如果你之前没有接触过 OpenMMLab 风格的配置文件，
-下面我将会用一个简单的例子来介绍配置文件的使用。请确保你安装了最新版本的 MMEngine，以支持新式风格的配置文件。
+```
+--model_type 模型名称
+--model_path 模型路径
+--cot  是否采用Chain-of-thought
+--few_shot  是否采用few-shot学习
+--with_prompt  是否采用alpaca的prompt模板，默认不适用
+--ntrain few-shot的个数，few-shot为False,此参数失效
+--constrained_decoding 是否采用有限制解码方式，由于fineval的评测标准答案为ABCD,提供了两种从模型中提取的答案方案：当constrained_decoding=True,计算模型生成的第一个token分别为ABCD的概率，选择其中概率最大的作为答案；当constrained_decoding=False，用正则表达式从模型生成内容中提取答案。
+--temperature 模型解码的温度
+--n_times 指定评测的重复次数，将模型放在output_dir下生成指定次数的文件夹，默认为1，生成文件夹为toke0
+--do_save_csv 是否将模型生成结果、提取的答案等内容保存在csv文件中
+--do_test 在valid和test集上测试,当do_test=False，在valid集上进行测试;当do_test=True,在test集上测试
+--gpus 模型测试时使用的gpu个数
+--only_cpu True 是否只采用cpu进行评估
+--output_dir 指定评测结果的输出路径
+
+```
 
 ## 基本格式
 
