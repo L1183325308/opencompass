@@ -1,33 +1,19 @@
 # 快速上手
 
-OpenCompass 的评测以配置文件为中心，必须包含 `datasets` 和 `models` 字段，配置需要评测的模型以及数据集，使用入口 'run.py' 启动。
+我们会以测试chatglm2模型的性能为例，带你熟悉FinEval的一些基本功能,默认为zero-shot和answer-only。
 
-我们会以测试 [OPT-125M](https://huggingface.co/facebook/opt-125m) 以及 [OPT-350M](https://huggingface.co/facebook/opt-350m) 预训练基座模型在 [SIQA](https://huggingface.co/datasets/social_i_qa) 和 [Winograd](https://huggingface.co/datasets/winogrande) 上的性能为例，带领你熟悉 OpenCompass 的一些基本功能。
-本次的测试的配置文件为[configs/eval_demo.py](https://github.com/InternLM/opencompass/blob/main/configs/eval_demo.py)。
+- 运行前确保已经安装了FinEval。
+- fineval文件夹下放置数据集，并命名为data
 
-运行前确保已经安装了 OpenCompass，本实验可以在单张 _GTX-1660-6G_ 显卡上成功运行。
-更大参数的模型，如 Llama-7B, 可参考 [configs](https://github.com/InternLM/opencompass/tree/main/configs) 中其他例子。
+- 下载模型权重，chatglm2-6b到data的同级目录
+- fineval的评测配置文件以配置.sh脚本为主，使用eval.sh启动。
 
-由于 OpenCompass 默认使用并行的方式进行评测，为了便于及时发现问题，我们可以在首次启动时使用 debug 模式运行，该模式会将任务串行执行，并会实时输出任务的执行进度。
+模型如果一起正常，屏幕上会出现
 
-```bash
-python run.py configs/eval_demo.py -w outputs/demo --debug
 ```
-
-如果一切正常，屏幕上会出现 "Starting inference process"：
-
-```bash
-Loading cached processed dataset at .cache/huggingface/datasets/social_i_qa/default/0.1.0/674d85e42ac7430d3dcd4de7007feaffcb1527c535121e09bab2803fbcc925f8/cache-742512eab30e8c9c.arrow
-[2023-07-12 18:23:55,076] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+0.0 Inference starts at 2023-07-27_12-06-31 on chatglm2 with subject of finance!
+0% 0/58 [00:00<00:00,  2.61s/it]
 ```
-
-此时可以使用 `ctrl+c` 中断 debug 模式的执行，并运行以下命令进行并行评测：
-
-```bash
-python run.py configs/eval_demo.py -w outputs/demo
-```
-
-运行 demo 期间，我们来介绍一下本案例中的配置内容以及启动选项。
 
 ## 步骤详解
 
