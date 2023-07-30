@@ -1,10 +1,11 @@
 # 如何运行
 
-OpenCompass 使用 OpenMMLab 新式风格的配置文件。如果你之前熟悉 OpenMMLab 风格的配置文件，可以直接阅读
-[纯 Python 风格的配置文件（Beta）](https://mmengine.readthedocs.io/zh_CN/latest/advanced_tutorials/config.html#python-beta)
-了解新式配置文件与原配置文件的区别。如果你之前没有接触过 OpenMMLab 风格的配置文件，
-下面我将会用一个简单的例子来介绍配置文件的使用。请确保你安装了最新版本的 MMEngine，以支持新式风格的配置文件。
+- 首先在fineval文件夹下放置数据集，并命名为data
+- 下载测评模型权重
+- 修改评测脚本code/run_eval.sh的参数
+- 运行评测脚本code/run_eval.sh
 
+  
 ## 基本格式
 
 OpenCompass 的配置文件都是 Python 格式的，遵从基本的 Python 语法，通过定义变量的形式指定每个配置项。
