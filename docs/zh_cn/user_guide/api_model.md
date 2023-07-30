@@ -1,27 +1,32 @@
 # 基于 API 的模型
 
-OpenCompass 目前支持以下基于 API 的模型推理：
-
-- OpenAI（`opencompass.models.OpenAI`）
-- Coming soon
-
-以下，我们以 OpenAI 的配置文件为例，模型如何在配置文件中使用基于 API 的模型。
+以OpenAi的api模型为例，使用`code/run_chatgpt_eval.sh`脚本文件运行评测。
 
 ```python
-from opencompass.models import OpenAI
+export PROJ_HOME=$PWD
+export KMP_DUPLICATE_LIB_OK=TRUE
 
-models = [
-    dict(
-        type=OpenAI,                             # 使用 OpenAI 模型
-        # 以下为 `OpenAI` 初始化参数
-        path='gpt-4',                            # 指定模型类型
-        key='YOUR_OPENAI_KEY',                   # OpenAI API Key
-        max_seq_len=2048,                        # 最大输入长度
-        # 以下参数为各类模型都有的参数，非 `OpenAI` 的初始化参数
-        abbr='GPT-4',                            # 模型简称
-        run_cfg=dict(num_gpus=0),                # 资源需求（不需要 GPU）
-        max_out_len=512,                         # 最长生成长度
-        batch_size=1,                            # 批次大小
-    ),
-]
+# 确定api的key
+openai_key=sk-*****************
+
+exp_name=chatgpt
+exp_date=$(date +"%Y%m%d%H%M%S")
+output_path=$PROJ_HOME/output_dir/${exp_name}/$exp_date
+
+echo "exp_date": $exp_date
+echo "output_path": $output_path
+
+python eval_chatgpt.py \
+    --openai_key ${openai_key} \
+    --cot False \
+    --few_shot False \
+    --n_times 1 \
+    --ntrain 5 \
+    --do_test False \
+    --do_save_csv False \
+    --output_dir ${output_path} \
+    --model_name gpt4 
 ```
+
+
+
