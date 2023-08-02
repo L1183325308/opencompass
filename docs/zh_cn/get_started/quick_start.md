@@ -8,7 +8,7 @@
 - 下载模型权重，chatglm2-6b到data的同级目录
 - fineval的评测配置文件以配置.sh脚本为主，使用eval.sh启动。
 
-模型如果一起正常，屏幕上会出现
+模型如果一切正常，屏幕上会出现
 
 ```
 0.0 Inference starts at 2023-07-27_12-06-31 on chatglm2 with subject of finance!
