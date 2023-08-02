@@ -3,7 +3,7 @@ Welcome to FinEval! ! !
 
 FIN-EVAL is the first comprehensive Chinese evaluation suite designed to assess the advanced knowledge and reasoning abilities of underlying models in a Chinese context. FIN-EVAL includes multiple-choice questions at four difficulty levels: middle school, high school, college, and major. The questions span 52 different disciplines, ranging from the humanities to science and engineering. FIN-EVAL comes with FIN-EVAL HARD, which is a very challenging subset of FIN-EVAL that requires advanced reasoning capabilities to solve. We comprehensively evaluate state-of-the-art LLMs on FIN-EVAL, including models in English and Chinese. The results show that only GPT-4 can achieve an average accuracy above 60%, which shows that there is still much room for improvement in current LLMs.
 
-You can see an example of our dataset in  , or check out our paper (put a link?) for more details.
+You can see an example of our dataset in Prompt_ , or check out our paper (put a link?) for more details.
 
 
 .. _GetStarted:
