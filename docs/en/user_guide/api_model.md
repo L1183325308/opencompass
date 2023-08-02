@@ -1,33 +1,29 @@
 # API-based Models
 
-Currently, OpenCompass supports API-based model inference for the following:
-
-- OpenAI (`opencompass.models.OpenAI`)
-- More coming soon
-
-Let's take the OpenAI configuration file as an example to see how API-based models are used in the
-configuration file.
+Taking OpenAi's api model as an example, use the `code/run_chatgpt_eval.sh` script file to run the evaluation.
 
 ```python
-from opencompass.models import OpenAI
+export PROJ_HOME=$PWD
+export KMP_DUPLICATE_LIB_OK=TRUE
 
-models = [
-    dict(
-        type=OpenAI,                             # Using the OpenAI model
-        # Parameters for `OpenAI` initialization
-        path='gpt-4',                            # Specify the model type
-        key='YOUR_OPENAI_KEY',                   # OpenAI API Key
-        max_seq_len=2048,                        # The max input number of tokens
-        # Common parameters shared by various models, not specific to `OpenAI` initialization.
-        abbr='GPT-4',                            # Model abbreviation used for result display.
-        max_out_len=512,                         # Maximum number of generated tokens.
-        batch_size=1,                            # The size of a batch during inference.
-        run_cfg=dict(num_gpus=0),                # Resource requirements (no GPU needed)
-    ),
-]
+# 确定api的key
+openai_key=sk-*****************
+
+exp_name=chatgpt
+exp_date=$(date +"%Y%m%d%H%M%S")
+output_path=$PROJ_HOME/output_dir/${exp_name}/$exp_date
+
+echo "exp_date": $exp_date
+echo "output_path": $output_path
+
+python eval_chatgpt.py \
+    --openai_key ${openai_key} \
+    --cot False \
+    --few_shot False \
+    --n_times 1 \
+    --ntrain 5 \
+    --do_test False \
+    --do_save_csv False \
+    --output_dir ${output_path} \
+    --model_name gpt4 
 ```
-
-# Custom Models
-
-If the above methods do not support your model evaluation requirements, you can refer to
-[Supporting New Models](../advanced_guides/new_model.md) to add support for new models in OpenCompass.
