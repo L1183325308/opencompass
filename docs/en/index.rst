@@ -1,20 +1,9 @@
-Welcome to OpenCompass' documentation!
-==========================================
+Welcome to FinEval! ! !
+==============================================
 
-Getting started with OpenCompass
--------------------------------
+FIN-EVAL is the first comprehensive Chinese evaluation suite designed to assess the advanced knowledge and reasoning abilities of underlying models in a Chinese context. FIN-EVAL includes multiple-choice questions at four difficulty levels: middle school, high school, college, and major. The questions span 52 different disciplines, ranging from the humanities to science and engineering. FIN-EVAL comes with FIN-EVAL HARD, which is a very challenging subset of FIN-EVAL that requires advanced reasoning capabilities to solve. We comprehensively evaluate state-of-the-art LLMs on FIN-EVAL, including models in English and Chinese. The results show that only GPT-4 can achieve an average accuracy above 60%, which shows that there is still much room for improvement in current LLMs.
 
-To help you quickly familiarized with OpenCompass, we recommend you to walk through the following documents in order:
-
-- First read the GetStarted_ section set up the environment, and run a mini experiment.
-
-- Then learn its basic usage through the UserGuides_.
-
-- If you want to customize some modules, like adding a new dataset or model, we have provided the AdvancedGuides_.
-
-- There are more handy tools, such as prompt viewer and lark bot reporter, all presented in Prompt_.
-
-We always welcome *PRs* and *Issues* for the betterment of OpenCompass.
+You can see an example of our dataset in  , or check out our paper (put a link?) for more details.
 
 
 .. _GetStarted:
