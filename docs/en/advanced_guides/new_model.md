@@ -1,73 +1,37 @@
 # Add a Model
 
-Currently, we support HF models, some model APIs, and some third-party models.
+- If the model is loaded using AutoModelForCausalLM, AutoTokenizer, specify model_type (model name) as auto, and fill in the rest of the parameters normally to load the new model.
 
-## Adding API Models
+- If the model is loaded in other ways (AutoModelForCausalLM, AutoTokenizer cannot load the model), you can modify the /code/evaluators/unify_evaluator.py file
 
-To add a new API-based model, you need to create a new file named `mymodel_api.py` under `opencompass/models` directory. In this file, you should inherit from `BaseAPIModel` and implement the `generate` method for inference and the `get_token_len` method to calculate the length of tokens. Once you have defined the model, you can modify the corresponding configuration file.
+  
+1. Customize and add model loading information, modify the /code/evaluators/unify_evaluator.py file, and import this parameter at transformers:
+   
+    ```
+    from transformers import (
+        AutoModel,
+        AutoTokenizer,
+        AutoModelForCausalLM,
+        BloomForCausalLM,
+        BloomTokenizerFast,
+        LlamaTokenizer,
+        LlamaForCausalLM,
+        AutoConfig,
+        模型新的加载方式
+    )
+    ```
 
-```python
-from ..base_api import BaseAPIModel
+2. Add custom model modification information:
 
-class MyModelAPI(BaseAPIModel):
-
-    is_api: bool = True
-
-    def __init__(self,
-                 path: str,
-                 max_seq_len: int = 2048,
-                 query_per_second: int = 1,
-                 retry: int = 2,
-                 **kwargs):
-        super().__init__(path=path,
-                         max_seq_len=max_seq_len,
-                         meta_template=meta_template,
-                         query_per_second=query_per_second,
-                         retry=retry)
-        ...
-
-    def generate(
-        self,
-        inputs,
-        max_out_len: int = 512,
-        temperature: float = 0.7,
-    ) -> List[str]:
-        """Generate results given a list of inputs."""
-        pass
-
-    def get_token_len(self, prompt: str) -> int:
-        """Get lengths of the tokenized string."""
-        pass
-```
-
-## Adding Third-Party Models
-
-To add a new third-party model, you need to create a new file named `mymodel.py` under `opencompass/models` directory. In this file, you should inherit from `BaseModel` and implement the `generate` method for generative inference, the `get_ppl` method for discriminative inference, and the `get_token_len` method to calculate the length of tokens. Once you have defined the model, you can modify the corresponding configuration file.
-
-```python
-from ..base import BaseModel
-
-class MyModel(BaseModel):
-
-    def __init__(self,
-                 pkg_root: str,
-                 ckpt_path: str,
-                 tokenizer_only: bool = False,
-                 meta_template: Optional[Dict] = None,
-                 **kwargs):
-        ...
-
-    def get_token_len(self, prompt: str) -> int:
-        """Get lengths of the tokenized strings."""
-        pass
-
-    def generate(self, inputs: List[str], max_out_len: int) -> List[str]:
-        """Generate results given a list of inputs. """
-        pass
-
-    def get_ppl(self,
-                inputs: List[str],
-                mask_length: Optional[List[int]] = None) -> List[float]:
-        """Get perplexity scores given a list of inputs."""
-        pass
-```
+    ```
+    MODEL_CLASSES = {
+        "bloom": (BloomForCausalLM, BloomTokenizerFast),
+        "chatglm": (AutoModel, AutoTokenizer),
+        "llama": (LlamaForCausalLM, LlamaTokenizer),
+        "baichuan": (AutoModelForCausalLM, AutoTokenizer),
+        "auto": (AutoModelForCausalLM, AutoTokenizer),
+        "moss":(AutoConfig, AutoTokenizer),
+        "自定义模型":(模型加载方式,分词器加载方式)
+    }
+    ```
+ 
