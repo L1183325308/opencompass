@@ -1,5 +1,7 @@
 # Cot(chain-of-thought)
 
+In the CoT mode, we need to add a sentence: Let us think step by step,
+
 - cot zero-shot:
 
 ```
