@@ -34,4 +34,4 @@
         "自定义模型":(模型加载方式,分词器加载方式)
     }
     ```
- 
+ 3. Add your new model loading logic in /code/evaluators/unify_evaluator.py.
