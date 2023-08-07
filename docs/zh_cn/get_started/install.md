@@ -7,17 +7,19 @@
     conda activate fineval_venv
     ```
 
+    如果你希望自定义PyTorch版本或者相关CUDA版本，请参考官方文档准备Pytorch环境。FinEval环境中，要求pytorch>=1.13。
+
 2. 安装 FinEval：
 
     ```python
-    git clone https://github.com/caiweige/fineval
-    cd fineval
+    git clone https://github.com/caiweige/FinEval
+    cd FinEval
     pip install -r requirements
     
     requirements文件如下:
     pandas
     torch
     tqdm
-    peft
+    peft 
     sentencepiece
     ```
