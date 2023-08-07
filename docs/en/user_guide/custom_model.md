@@ -1,9 +1,12 @@
 # Custom model
 
-```
 When defining a new model, define the model type as auto to load the new model. You can change other parameters by yourself. Here, the Baichuan model is taken as an example to load a custom model.
+
+If the newly added model parameters are configured as AutoModelForCausalLM, AutoTokenizer loading, and the model type is auto, it can be evaluated.
+
+```
 #baichuan-13b
-model_type=auto #模型类型中不存在的，可以使用auto方式进行加载，采用AutoModelForCausalLM,AutoTokenizer方式加载
+model_type=auto #model_type=auto #If the model type does not exist, you can use the auto method to load, and use the AutoModelForCausalLM, AutoTokenizer method to load
 model_path=/data/sufeModel/MedicalGPT/Model/baichuan-13b
 exp_name=baichuan13b
 
@@ -29,4 +32,3 @@ python eval.py \
     --only_cpu False \
     --output_dir ${output_path}
 ```
-
