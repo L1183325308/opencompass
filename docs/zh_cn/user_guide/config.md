@@ -1,17 +1,19 @@
 # 参数配置说明
 
-###### few-shot和cot进行参数组合，可以产生四种评测方式:
+## 1. 配置说明
+
+### few-shot和cot进行参数组合，可以产生四种评测方式:
 
 - few-shot为False cot为False：即为zero-shot采用只回答答案的方式。
 - few-shot为True  cot为False: 即为few-shot采用只回答答案的方式。
 - few-shot为False cot为True: 即为zero-shot方式采用CoT方式回答。
 - few-shot为True cot为True: 即为few-shot方式采用CoT方式回答。
 
-###### few-shot or zero-shot？
+### few-shot or zero-shot？
 
 - 一般来说，pretraining阶段的模型few-shot 的效果总是会比 zero-shot 好一些，但是经过instruction tuning之后的模型，且instruction tuning没有few-shot data的话，很可能zero-shot会更好。
 
-###### 不同的model_type代表不同的模型模型读取配置，model_type请从以下模型中选择：
+### 不同的model_type代表不同的模型模型读取配置，model_type请从以下模型中选择：
     
     ```
     "bloom": (BloomForCausalLM, BloomTokenizerFast),
@@ -22,7 +24,9 @@
     "moss":(AutoConfig, AutoTokenizer)
     ```
 
-- 以下为模型配置信息
+## 2. 模型配置信息
+
+以下为模型配置信息：
   
     ```
     --model_type 模型名称
