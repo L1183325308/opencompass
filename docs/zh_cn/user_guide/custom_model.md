@@ -1,7 +1,10 @@
 # 自定义模型
 
-```
 定义新模型时，将模型类型定义为auto，即可加载新模型。其他参数自行更改即可。此处以百川模型为例，加载自定义模型。
+
+如果新加入模型参数配置为AutoModelForCausalLM,AutoTokenizer方式加载，模型类型为auto既可进行测评。
+
+```
 #baichuan-13b
 model_type=auto #模型类型中不存在的，可以使用auto方式进行加载，采用AutoModelForCausalLM,AutoTokenizer方式加载
 model_path=/data/sufeModel/MedicalGPT/Model/baichuan-13b
@@ -29,4 +32,3 @@ python eval.py \
     --only_cpu False \
     --output_dir ${output_path}
 ```
-
