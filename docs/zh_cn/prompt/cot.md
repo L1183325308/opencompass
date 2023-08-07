@@ -1,5 +1,7 @@
 # Cot(chain-of-thought)
 
+CoT模式中，我们需要加入一句话：让我们一步一步思考，
+
 - cot zero-shot:
 
 ```
