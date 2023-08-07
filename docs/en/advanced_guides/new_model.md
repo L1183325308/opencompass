@@ -1,4 +1,4 @@
-# Add a Model
+# Add a Model(optional)
 
 - If the model is loaded using AutoModelForCausalLM, AutoTokenizer, specify model_type (model name) as auto, and fill in the rest of the parameters normally to load the new model.
 
