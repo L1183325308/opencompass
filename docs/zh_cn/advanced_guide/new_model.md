@@ -1,4 +1,4 @@
-# 支持新模型
+# 支持新模型（选用）
 
 - 如果模型采用AutoModelForCausalLM,AutoTokenizer方式加载,指定model_type（模型名称）为auto，其余参数正常填写，即可加载新模型。
 
