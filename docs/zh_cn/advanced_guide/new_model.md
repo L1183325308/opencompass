@@ -34,3 +34,5 @@
         "自定义模型":(模型加载方式,分词器加载方式)
     }
     ```
+
+3. 在/code/evaluators/unify_evaluator.py中加入您新的模型加载逻辑。
