@@ -2,7 +2,7 @@
 
 ## 1. 测试Llama-2-7b-hf模型
 
-我们会以测试Llama-2-7b-hf模型的性能为例，带你熟悉FinEval的一些基本功能,默认为zero-shot和answer-only。
+我们会以测试Llama-2-7b-hf模型的性能为例，带你熟悉FinEval的一些基本功能，默认为`zero-shot`和`answer-only`。
 
 - 运行前确保已经安装了FinEval，本次实验在单张A800显卡上成功运行。更大的参数量，请参考不同模型的推理资源大小，合理选择计算资源。
 
