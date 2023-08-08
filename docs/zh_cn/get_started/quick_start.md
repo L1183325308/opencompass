@@ -41,7 +41,7 @@
   │   └── run_chatgpt_eval.sh # chatgpt的配置脚本
   ```
 
-- fineval的评测配置文件以配置.sh脚本为主，使用eval.sh启动。
+- FinEval的评测配置文件以配置.sh脚本为主，使用`run_eval.sh`启动。
 
 - 模型如果一切正常，屏幕上会出现
 
