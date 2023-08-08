@@ -50,7 +50,7 @@ We will take the performance of the Llama-2-7b-hf model as an example to familia
   0% 0/58 [00:00<00:00,  2.61s/it]
   ```
 
-Note: You can use ctrl+c to interrupt program execution. During the running of the demo, let's explain in detail the detailed content and parameter configuration in this case.
+Note: You can use `ctrl+c` to interrupt program execution. During the running of the demo, let's explain in detail the detailed content and parameter configuration in this case.
 
 ## 2. Final running result
 
