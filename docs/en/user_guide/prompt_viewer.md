@@ -1,6 +1,6 @@
 # Prompt_Template
 
-The with_prompt in the configuration file can determine whether we use the answer template. Our template is defined as follows.
+The `with_prompt` in the configuration file can determine whether we use the answer template. Our template is defined as follows.
 
 The Alpaca model is recommended. Other models except the Alpaca model are not recommended to use this template.
 
