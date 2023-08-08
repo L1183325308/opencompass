@@ -41,7 +41,7 @@ We will take the performance of the Llama-2-7b-hf model as an example to familia
   │   └── run_chatgpt_eval.sh # chatgpt configuration script
   ```
 
-- The evaluation configuration file of FinEval is mainly based on the configuration.sh script, which is started by eval.sh.
+- FinEval's evaluation configuration file is mainly based on the configuration.sh script, which is started with `run_eval.sh`.
 
 - The model will appear on the screen if everything is ok
 
