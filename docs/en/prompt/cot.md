@@ -1,4 +1,4 @@
-# Cot(chain-of-thought)
+# CoT(chain-of-thought)
 
 In the CoT mode, we need to add a sentence: Let us think step by step,
 
