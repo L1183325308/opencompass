@@ -7,7 +7,7 @@
     conda activate fineval_venv
     ```
 
-    如果你希望自定义PyTorch版本或者相关CUDA版本，请参考官方文档准备Pytorch环境。FinEval环境中，要求pytorch>=1.13。
+    如果你希望自定义PyTorch版本或者相关CUDA版本，请参考官方文档准备Pytorch环境。FinEval环境中，要求`pytorch>=1.13`。
 
 2. 安装 FinEval：
 
