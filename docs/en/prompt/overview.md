@@ -6,4 +6,4 @@ For example, in the fine-tuning of some `chat` models, we may add system-level i
 
 The format of the prompt is very important! ! Pay attention to line breaks! ! Be careful not to have spaces at the end of each line.
 
-According to the explanation in the parameter configuration, the combination of few-shot and cot parameters can generate four evaluation methods. According to different evaluation methods, we have different prompts.
+According to the explanation in the parameter configuration, the combination of few-shot and CoT parameters can generate four evaluation methods. According to different evaluation methods, we have different prompts.
