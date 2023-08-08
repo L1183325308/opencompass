@@ -1,9 +1,9 @@
 Welcome to FinEval! ! !
 ==============================================
 
-FIN-EVAL is the first comprehensive Chinese evaluation suite designed to assess the advanced knowledge and reasoning abilities of underlying models in a Chinese context. FIN-EVAL includes multiple-choice questions at four difficulty levels: middle school, high school, college, and major. The questions span 52 different disciplines, ranging from the humanities to science and engineering. FIN-EVAL comes with FIN-EVAL HARD, which is a very challenging subset of FIN-EVAL that requires advanced reasoning capabilities to solve. We comprehensively evaluate state-of-the-art LLMs on FIN-EVAL, including models in English and Chinese. The results show that only GPT-4 can achieve an average accuracy above 60%, which shows that there is still much room for improvement in current LLMs.
+This paper introduces FinEval, an evaluation benchmark specially designed for the Chinese financial sector. FinEval is a series of high-quality multiple-choice questions covering four topics: finance, economics, accounting and professionalism. It includes 4738 questions with 34 topics To ensure a comprehensive evaluation of model performance, FinEval employs various methods, including zero sample, few sample, answer only (AO, answer answer only) and chain of thought (CoT, chain of thought) The state-of-the-art Chinese and English large language models are evaluated on FinEval, and the results show that only GPT-4 achieves 70% accuracy in different prompt settings, which shows that large language models have great growth potential in the financial field Overall, this study provides a strong evaluation benchmark for future large-scale models, while its developmental constraints provide valuable tools.
 
-You can see an example of our dataset in Prompt_ , or check out our paper (put a link?) for more details.
+You can check out our dataset example in AdvancedGuides_ , or check out our **paper (link)** for more details.
 
 
 .. _GetStarted:
