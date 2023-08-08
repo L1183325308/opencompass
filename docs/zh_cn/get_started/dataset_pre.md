@@ -1,6 +1,6 @@
 # 数据集准备
 
-使用Hugging Face datasets下载数据集。运行命令进行手动下载解压，在Fineval/code的项目目录下运行下面命令，并改名为data，数据集准备至FinEval/code/data目录下。
+使用Hugging Face datasets下载数据集。运行命令进行**手动下载解压**，在Fineval/code的项目目录下运行下面命令，并改名为data，数据集准备至FinEval/code/data目录下。
 
 ```
 cd code
