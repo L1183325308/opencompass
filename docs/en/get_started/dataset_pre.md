@@ -1,6 +1,6 @@
 # Dataset Preparation
 
-Download the dataset using Hugging Face datasets. Run the command to manually download and decompress, run the following command in the Fineval/code project directory, and rename it to data, and prepare the dataset to the FinEval/code/data directory.
+Download the dataset using Hugging Face datasets. Run the command to **manually download** and decompress, run the following command in the Fineval/code project directory, and rename it to data, and prepare the dataset to the FinEval/code/data directory.
 
 ```
 cd code
