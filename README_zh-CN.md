@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/zh_cn/_static/image/Logo.png" width="500px"/>
+  <img src="docs/zh_cn/_static/image/FinEval.jpg" width="500px"/>
   <br />
   <br />
 
