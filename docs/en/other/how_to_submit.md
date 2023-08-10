@@ -1,5 +1,5 @@
 # How to submit your assessment
-
+You first need to prepare a UTF-8 encoded JSON file and write it in the following format.
 ```
 ## The key inside each subject is the "id" field in the dataset
 {
@@ -18,3 +18,4 @@
     ....
 }
 ```
+Then you can submit the prepared JSON file to zhang.liwen@shufe.edu.cn.
