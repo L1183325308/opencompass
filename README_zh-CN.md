@@ -153,28 +153,35 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 | moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
-## 数据集支持
-
-
-
-
-## 模型支持
-
 
 ## 安装
 
-下面展示了快速安装的步骤。有部分第三方功能可能需要额外步骤才能正常运行，详细步骤请参考[安装指南](https://opencompass.readthedocs.io/zh_cn/latest/get_started.html)。
+下面展示了快速安装的步骤，详细请参考[安装指南](https://opencompass.readthedocs.io/zh_cn/latest/get_started.html)。
 
-```Python
-conda create --name opencompass python=3.10 pytorch torchvision pytorch-cuda -c nvidia -c pytorch -y
-conda activate opencompass
-git clone https://github.com/InternLM/opencompass opencompass
-cd opencompass
-pip install -e .
-# 下载数据集到 data/ 处
-wget https://github.com/InternLM/opencompass/releases/download/0.1.0/OpenCompassData.zip
-unzip OpenCompassData.zip
+
+ ```python
+    conda create --name fineval_venv python=3.8
+    conda activate fineval_venv
+ ```
+
+```python
+    git clone https://github.com/caiweige/FinEval
+    cd FinEval
+    pip install -r requirements.txt
+    
+    requirements.txt 文件如下:
+    pandas
+    torch
+    tqdm
+    peft 
+    sentencepiece
 ```
+
+## 支持新数据集
+
+如果需要新加入数据集进行评测，请参考[支持新数据集](/docs/zh_cn/advanced_guide/new_dataset.md)
+
+## 模型支持
 
 ## 评测
 
