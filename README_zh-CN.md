@@ -36,8 +36,10 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 
 ## 性能榜单
 
-下面列出了我们在初始版本中进行评估的模型的zero-shot和five-shot准确率，分为Answer-only和CoT。
+我们分为Answer-only和CoT对模型进行评估，下面是模型的zero-shot和five-shot准确率。
+
 ### Answer-only
+
 #### Zero-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
 | ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
@@ -64,6 +66,7 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 | AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 | moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+
 
 #### Five-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
@@ -93,6 +96,63 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
+### CoT (chain-of-thought)
+
+#### Zero-shot
+| Model               | Finance | Accounting | Economy | Certificate | Average |
+| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
+| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
+| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
+| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
+| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
+| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
+| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
+| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
+| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
+| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
+| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
+| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
+| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+
+
+#### Five-shot
+| Model               | Finance | Accounting | Economy | Certificate | Average |
+| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
+| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
+| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
+| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
+| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
+| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
+| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
+| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
+| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
+| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
+| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
+| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
+| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+
 ## 数据集支持
 
 
@@ -100,53 +160,6 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 
 ## 模型支持
 
-<table align="center">
-  <tbody>
-    <tr align="center" valign="bottom">
-      <td>
-        <b>开源模型</b>
-      </td>
-      <td>
-        <b>API 模型</b>
-      </td>
-      <!-- <td>
-        <b>自定义模型</b>
-      </td> -->
-    </tr>
-    <tr valign="top">
-      <td>
-
-- LLaMA
-- Vicuna
-- Alpaca
-- Baichuan
-- WizardLM
-- ChatGLM-6B
-- ChatGLM2-6B
-- MPT
-- Falcon
-- TigerBot
-- MOSS
-- ……
-
-</td>
-<td>
-
-- OpenAI
-- Claude (即将推出)
-- PaLM (即将推出)
-- ……
-
-</td>
-<!-- <td>
-
-- GLM
-- ……
-
-</td> -->
-</tr>
-  </tbody>
-</table>
 
 ## 安装
 
