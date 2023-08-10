@@ -156,7 +156,7 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 
 ## 安装
 
-下面展示了快速安装的步骤，详细请参考[安装指南](https://opencompass.readthedocs.io/zh_cn/latest/get_started.html)。
+下面展示了快速安装的步骤，详细请参考[安装指南](docs/zh_cn/get_started/install.md)。
 
 
  ```python
@@ -177,15 +177,39 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
     sentencepiece
 ```
 
-## 支持新数据集
-
-如果需要新加入数据集进行评测，请参考[支持新数据集](/docs/zh_cn/advanced_guide/new_dataset.md)
-
-## 模型支持
-
 ## 评测
 
-请阅读[快速上手](https://opencompass.readthedocs.io/zh_CN/latest/get_started.html#id2)了解如何运行一个评测任务。
+请阅读[快速上手](/docs/zh_cn/get_started/quick_start.md)了解如何运行一个评测任务。
+
+## 支持新数据集和模型
+
+如果需要新加入数据集进行评测，请参考[支持新数据集](/docs/zh_cn/advanced_guide/new_dataset.md)。
+
+如果需要加载新模型，请参考[支持新模型](/docs/zh_cn/advanced_guide/new_model.md)。
+
+## 如何提交
+
+您首先需要准备一个 UTF-8编码的JSON文件，并按照以下格式编写。
+```
+## 每个学科内部的键名是数据集中的"id"字段
+{
+    "banking_practitioner_qualification_certificate": {
+        "0": "A",
+        "1": "B",
+        "2": "B",
+        ...
+    },
+    
+    "学科名称":{
+    "0":"答案1",
+    "1":"答案2",
+    ...
+    }
+    ....
+}
+```
+
+然后你可以将准备好的JSON文件提交到zhang.liwen@shufe.edu.cn。
 
 ## 引用
 
