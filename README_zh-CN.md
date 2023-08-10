@@ -8,8 +8,7 @@
 
 <!-- [![PyPI](https://badge.fury.io/py/opencompass.svg)](https://pypi.org/project/opencompass/) -->
 
-[🌐Website](https://opencompass.org.cn/) |
-[📘Documentation](https://opencompass.readthedocs.io/zh_CN/latest/index.html) |
+[🌐Website](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
 [🛠️Installation](https://opencompass.readthedocs.io/zh_CN/latest/get_started.html) |
 [🤔Reporting Issues](https://github.com/InternLM/opencompass/issues/new/choose)
 
