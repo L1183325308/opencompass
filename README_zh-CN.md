@@ -6,11 +6,9 @@
 [![docs](https://readthedocs.org/projects/opencompass/badge)](https://opencompass.readthedocs.io/zh_CN)
 [![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
 
-<!-- [![PyPI](https://badge.fury.io/py/opencompass.svg)](https://pypi.org/project/opencompass/) -->
-
-[🌐Website](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
-[🛠️Installation](https://opencompasstest1.readthedocs.io/zh_CN/latest/get_started.html) |
-[🤔Reporting Issues](https://github.com/InternLM/opencompass/issues/new/choose)
+[🌐网站](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
+[🤗Hugging Face](https://huggingface.co/datasets/ceval/ceval-exam) |
+[📃论文](https://arxiv.org/abs/2305.08322)
 
 [English](/README.md) | 简体中文
 
