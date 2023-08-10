@@ -34,11 +34,14 @@
 FinEval是一个包含**金融、经济、会计和证书**等领域高质量多项选择题的集合。它包括了4,738个问题，涵盖了34个不同的学科。为了确保对模型性能的全面评估，FinEval采用了零样本、少样本、仅答案和链式思维提示等多种方法。在FinEval上评估最先进的中文和英文LLMs，结果显示只有GPT-4在不同的提示设置下达到了70%的准确率，表明LLMs在金融领域知识方面具有显著的增长潜力。我们的工作提供了一个更全面的金融知识评估基准，利用纸质实践题目，涵盖了广泛的LLMs评估范围。
 
 
-## 性能榜单
+## 性能排行榜
 
-我们分为Answer-only和CoT对模型进行评估，下面是模型的zero-shot和five-shot准确率。
+我们分为**仅预测答案**和**思维链**对模型进行评估，如果需要了解两种方法的Prompt样例，请参考[仅预测答案的zero-shot](/docs/zh_cn/prompt/zero_shot.md)、[仅预测答案的few-shot](/docs/zh_cn/prompt/few_shot.md)和[思维链](/docs/zh_cn/prompt/cot.md)
 
-### Answer-only
+下面是模型的zero-shot和five-shot准确率。
+
+
+### 仅预测答案
 
 #### Zero-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
@@ -96,7 +99,7 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-### CoT (chain-of-thought)
+### 思维链 (chain-of-thought)
 
 #### Zero-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
