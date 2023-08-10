@@ -14,9 +14,9 @@
     ```python
     git clone https://github.com/caiweige/FinEval
     cd FinEval
-    pip install -r requirements
+    pip install -r requirements.txt
     
-    requirements文件如下:
+    requirements.txt 文件如下:
     pandas
     torch
     tqdm
