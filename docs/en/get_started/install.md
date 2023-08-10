@@ -15,7 +15,7 @@
    cd FinEval
    pip install -r requirements
    
-   requirements文件如下:
+   requirements are as follows:
    pandas
    torch
    tqdm
