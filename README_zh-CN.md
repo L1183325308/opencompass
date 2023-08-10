@@ -21,17 +21,23 @@
     👋 加入我们的 <a href="https://discord.gg/xa29JuW87d" target="_blank">Discord</a> 和 <a href="https://github.com/InternLM/InternLM/assets/25839884/a6aad896-7232-4220-ac84-9e070c2633ce" target="_blank">微信社区</a>
 </p>
 
-欢迎来到OpenCompass！
-
-就像指南针在我们的旅程中为我们导航一样，我们希望OpenCompass能够帮助你穿越评估大型语言模型的重重迷雾。OpenCompass提供丰富的算法和功能支持，期待OpenCompass能够帮助社区更便捷地对NLP模型的性能进行公平全面的评估。
-
-
-
-## 介绍
+欢迎来到FinEval！
 
 大型语言模型（LLMs）在各种自然语言处理任务中表现出色，然而它们在更具挑战性和特定领域任务中的效力仍然很少被探索。本文介绍了FinEval，这是一个专门为LLMs中的金融领域知识设计的基准测试。
 
 FinEval是一个包含**金融、经济、会计和证书**等领域高质量多项选择题的集合。它包括了4,738个问题，涵盖了34个不同的学科。为了确保对模型性能的全面评估，FinEval采用了零样本、少样本、仅答案和链式思维提示等多种方法。在FinEval上评估最先进的中文和英文LLMs，结果显示只有GPT-4在不同的提示设置下达到了70%的准确率，表明LLMs在金融领域知识方面具有显著的增长潜力。我们的工作提供了一个更全面的金融知识评估基准，利用纸质实践题目，涵盖了广泛的LLMs评估范围。
+
+## 目录
+
+- [性能排行榜](#性能排行榜)
+  - [仅预测答案](#仅预测答案)
+  - [思维链](#思维链 (chain-of-thought))
+- [安装](#安装)
+- [评测](#评测)
+- [准备数据集](#准备数据集)
+- [支持新数据集和模型](#支持新数据集和模型)
+- [如何提交](#如何提交)
+- [引用](#引用)
 
 
 ## 性能排行榜
@@ -161,7 +167,6 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 
 下面展示了快速安装的步骤，详细请参考[安装指南](docs/zh_cn/get_started/install.md)。
 
-
  ```python
     conda create --name fineval_venv python=3.8
     conda activate fineval_venv
@@ -179,6 +184,24 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
     peft 
     sentencepiece
 ```
+
+## 准备数据集
+
+使用Hugging Face datasets下载数据集。运行命令进行**手动下载解压**，在Fineval/code的项目目录下运行下面命令，并改名为data，数据集准备至FinEval/code/data目录下。
+
+```
+cd code
+git clone *----------------
+unzip xx.zip
+mv xx data
+```
+
+data文件夹格式为:
+
+- -----data
+  - ----dev：每个科目的dev集中包含五个示范实例以及few-shot评估提供的解释
+  - ----val：val集主要作用于超参调整
+  - ----test：用于模型评估，test集的标签不会公开，需用户提交其结果，才可以获得测试准确值
 
 ## 评测
 
