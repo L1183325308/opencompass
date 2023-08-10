@@ -3,7 +3,6 @@
   <br />
   <br />
 
-[![docs](https://readthedocs.org/projects/opencompass/badge)](https://opencompass.readthedocs.io/zh_CN)
 [![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
 
 [🌐网站](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
