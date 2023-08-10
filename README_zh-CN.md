@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/zh_cn/_static/image/logo.svg" width="500px"/>
+  <img src="docs/zh_cn/_static/image/Logo.png" width="500px"/>
   <br />
   <br />
 
@@ -25,219 +25,78 @@
 
 就像指南针在我们的旅程中为我们导航一样，我们希望OpenCompass能够帮助你穿越评估大型语言模型的重重迷雾。OpenCompass提供丰富的算法和功能支持，期待OpenCompass能够帮助社区更便捷地对NLP模型的性能进行公平全面的评估。
 
-## 更新
 
-- **\[2023.07.19\]** 新增了 [Llama 2](https://ai.meta.com/llama/)！我们近期将会公布其评测结果。\[[文档](./docs/zh_cn/get_started.md#安装)\]
-- **\[2023.07.13\]** 发布了 [MMBench](https://opencompass.org.cn/MMBench)，该数据集经过细致整理，用于评测多模态模型全方位能力 🔥🔥🔥。
 
 ## 介绍
 
-OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：
+大型语言模型（LLMs）在各种自然语言处理任务中表现出色，然而它们在更具挑战性和特定领域任务中的效力仍然很少被探索。本文介绍了FinEval，这是一个专门为LLMs中的金融领域知识设计的基准测试。
 
-- **开源可复现**：提供公平、公开、可复现的大模型评测方案
+FinEval是一个包含**金融、经济、会计和证书**等领域高质量多项选择题的集合。它包括了4,738个问题，涵盖了34个不同的学科。为了确保对模型性能的全面评估，FinEval采用了零样本、少样本、仅答案和链式思维提示等多种方法。在FinEval上评估最先进的中文和英文LLMs，结果显示只有GPT-4在不同的提示设置下达到了70%的准确率，表明LLMs在金融领域知识方面具有显著的增长潜力。我们的工作提供了一个更全面的金融知识评估基准，利用纸质实践题目，涵盖了广泛的LLMs评估范围。
 
-- **全面的能力维度**：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力
-
-- **丰富的模型支持**：已支持 20+ HuggingFace 及 API 模型
-
-- **分布式高效评测**：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测
-
-- **多样化评测范式**：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能
-
-- **灵活化拓展**：想增加新模型或数据集？想要自定义更高级的任务分割策略，甚至接入新的集群管理系统？OpenCompass 的一切均可轻松扩展！
 
 ## 性能榜单
 
-我们将陆续提供开源模型和API模型的具体性能榜单，请见 [OpenCompass Leaderbaord](https://opencompass.org.cn/rank) 。如需加入评测，请提供模型仓库地址或标准的 API 接口至邮箱  `opencompass@pjlab.org.cn`.
+下面列出了我们在初始版本中进行评估的模型的zero-shot和five-shot准确率，分为Answer-only和CoT。
+### Answer-only
+#### Zero-shot
+| Model               | Finance | Accounting | Economy | Certificate | Average |
+| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
+| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
+| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
+| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
+| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
+| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
+| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
+| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
+| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
+| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
+| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
+| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
+| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
-[![image](https://github.com/InternLM/opencompass/assets/13503330/76237116-a9dd-4207-abef-7ff73b89568a)](https://opencompass.org.cn/rank)
+#### Five-shot
+| Model               | Finance | Accounting | Economy | Certificate | Average |
+| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
+| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
+| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
+| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
+| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
+| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
+| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
+| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
+| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
+| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
+| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
+| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
+| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
+
 
 ## 数据集支持
 
-<table align="center">
-  <tbody>
-    <tr align="center" valign="bottom">
-      <td>
-        <b>语言</b>
-      </td>
-      <td>
-        <b>知识</b>
-      </td>
-      <td>
-        <b>推理</b>
-      </td>
-      <td>
-        <b>学科</b>
-      </td>
-      <td>
-        <b>理解</b>
-      </td>
-    </tr>
-    <tr valign="top">
-      <td>
-<details open>
-<summary><b>字词释义</b></summary>
 
-- WiC
-- SummEdits
 
-</details>
-
-<details open>
-<summary><b>成语习语</b></summary>
-
-- CHID
-
-</details>
-
-<details open>
-<summary><b>语义相似度</b></summary>
-
-- AFQMC
-- BUSTM
-
-</details>
-
-<details open>
-<summary><b>指代消解</b></summary>
-
-- CLUEWSC
-- WSC
-- WinoGrande
-
-</details>
-
-<details open>
-<summary><b>翻译</b></summary>
-
-- Flores
-
-</details>
-      </td>
-      <td>
-<details open>
-<summary><b>知识问答</b></summary>
-
-- BoolQ
-- CommonSenseQA
-- NaturalQuestion
-- TrivialQA
-
-</details>
-
-<details open>
-<summary><b>多语种问答</b></summary>
-
-- TyDi-QA
-
-</details>
-      </td>
-      <td>
-<details open>
-<summary><b>文本蕴含</b></summary>
-
-- CMNLI
-- OCNLI
-- OCNLI_FC
-- AX-b
-- AX-g
-- CB
-- RTE
-
-</details>
-
-<details open>
-<summary><b>常识推理</b></summary>
-
-- StoryCloze
-- StoryCloze-CN（即将上线）
-- COPA
-- ReCoRD
-- HellaSwag
-- PIQA
-- SIQA
-
-</details>
-
-<details open>
-<summary><b>数学推理</b></summary>
-
-- MATH
-- GSM8K
-
-</details>
-
-<details open>
-<summary><b>定理应用</b></summary>
-
-- TheoremQA
-
-</details>
-
-<details open>
-<summary><b>代码</b></summary>
-
-- HumanEval
-- MBPP
-
-</details>
-
-<details open>
-<summary><b>综合推理</b></summary>
-
-- BBH
-
-</details>
-      </td>
-      <td>
-<details open>
-<summary><b>初中/高中/大学/职业考试</b></summary>
-
-- GAOKAO-2023
-- CEval
-- AGIEval
-- MMLU
-- GAOKAO-Bench
-- MMLU-CN (即将上线)
-- ARC
-
-</details>
-      </td>
-      <td>
-<details open>
-<summary><b>阅读理解</b></summary>
-
-- C3
-- CMRC
-- DRCD
-- MultiRC
-- RACE
-
-</details>
-
-<details open>
-<summary><b>内容总结</b></summary>
-
-- CSL
-- LCSTS
-- XSum
-
-</details>
-
-<details open>
-<summary><b>内容分析</b></summary>
-
-- EPRSTMT
-- LAMBADA
-- TNEWS
-
-</details>
-      </td>
-    </tr>
-</td>
-    </tr>
-  </tbody>
-</table>
 
 ## 模型支持
 
@@ -307,10 +166,6 @@ unzip OpenCompassData.zip
 ## 评测
 
 请阅读[快速上手](https://opencompass.readthedocs.io/zh_CN/latest/get_started.html#id2)了解如何运行一个评测任务。
-
-## 致谢
-
-该项目部分的代码引用并修改自 [OpenICL](https://github.com/Shark-NLP/OpenICL)。
 
 ## 引用
 
