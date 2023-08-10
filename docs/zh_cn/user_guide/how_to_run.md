@@ -53,7 +53,7 @@
 
   
 
-- 运行评测脚本code/run_eval.sh
+- 运行评测脚本`code/run_eval.sh`
 
   ```
   bash run_eval.sh
