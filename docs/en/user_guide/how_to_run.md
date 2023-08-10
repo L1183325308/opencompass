@@ -53,7 +53,7 @@ Let's continue to take the Llama-2-7b-hf model as an example to give a detailed 
 
   
 
-- Run the evaluation script code/run_eval.sh
+- Run the evaluation script `code/run_eval.sh`.
 
   ```
   bash run_eval.sh
