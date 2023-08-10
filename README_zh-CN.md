@@ -36,9 +36,9 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 
 ## 性能排行榜
 
-我们分为**仅预测答案**和**思维链**对模型进行评估，如果需要了解两种方法的Prompt样例，请参考[仅预测答案的zero-shot](/docs/zh_cn/prompt/zero_shot.md)、[仅预测答案的few-shot](/docs/zh_cn/prompt/few_shot.md)和[思维链](/docs/zh_cn/prompt/cot.md)
+我们分为**仅预测答案**和**思维链**对模型进行评估，如果需要了解两种方法的Prompt样例，请参考[仅预测答案的zero-shot](/docs/zh_cn/prompt/zero_shot.md)、[仅预测答案的few-shot](/docs/zh_cn/prompt/few_shot.md)和[思维链](/docs/zh_cn/prompt/cot.md)。
 
-下面是模型的zero-shot和five-shot准确率。
+下面是模型的zero-shot和five-shot准确率:
 
 
 ### 仅预测答案
@@ -211,7 +211,6 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
     ....
 }
 ```
-
 然后你可以将准备好的JSON文件提交到zhang.liwen@shufe.edu.cn。
 
 ## 引用
