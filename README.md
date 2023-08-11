@@ -218,9 +218,9 @@ First, you need to prepare a JSON file encoded in UTF-8 and follow the format be
         ...
     },
     
-    "学科名称":{
-    "0":"答案1",
-    "1":"答案2",
+    "Subject Name":{
+    "0":"Answer1",
+    "1":"Answer2",
     ...
     }
     ....
