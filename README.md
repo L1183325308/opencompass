@@ -20,29 +20,20 @@ Large Language Models (LLMs) have demonstrated impressive performance across var
 
 FinEval comprises a collection of high-quality multiple-choice questions spanning the fields of **finance, economics, accounting, and certifications**. It encompasses 4,661 questions, covering 34 distinct disciplines. To ensure a comprehensive evaluation of model performance, FinEval employs various methods such as zero-shot, few-shot, answer-only, and chain of thought prompts. Evaluating state-of-the-art Chinese and English LLMs on FinEval reveals that only GPT-4 achieves a 70% accuracy rate across different prompt settings, underscoring the significant growth potential of LLMs in financial domain knowledge. Our work provides a more comprehensive benchmark for evaluating financial knowledge, utilizing practical paper-based exercises that encompass a wide range of LLMs assessment scenarios.
 
-- [性能排行榜](#性能排行榜)
-  - [仅预测答案](#仅预测答案)
-  - [思维链](#思维链 (chain-of-thought))
-- [安装](#安装)
-- [评测](#评测)
-- [准备数据集](#准备数据集)
-- [支持新数据集和模型](#支持新数据集和模型)
-- [如何提交](#如何提交)
-- [引用](#引用)
 
 ## Contents
 
-- [Performance Leaderboard](#leaderboard)
+- [Performance Leaderboard](#Performance-leaderboard)
   - [Answer only](#Answer-only)
   - [CoT](#CoT (chain-of-thought))
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
-- [Preparing the Dataset](#Dataset-Preparation)
+- [Dataset Preparation](#Dataset-Preparation)
 - [Supporting New Datasets and Models](#supporting-new-datasets-and-models)
 - [How to Submit](#How-to-submit)
 - [Citation](#Citation)
 
-## leaderboard
+## Performance leaderboard
 
 We divide the evaluation into **Answer Only** and **Chain of Thought**. For examples of prompts for both methods, please refer to [Zero-Shot for Answer only](/docs/en/prompt/zero_shot.md), [few-shot for Answer only](/docs/en/prompt/few_shot.md), and [Chain of Thought](/docs/en/prompt/cot.md).
 
