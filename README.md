@@ -3,15 +3,11 @@
   <br />
   <br />
 
-[![docs](https://readthedocs.org/projects/opencompass/badge)](https://opencompass.readthedocs.io/en)
 [![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
 
-<!-- [![PyPI](https://badge.fury.io/py/opencompass.svg)](https://pypi.org/project/opencompass/) -->
-
-[🌐Website](https://opencompass.org.cn/) |
-[📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
-[🛠️Installation](https://opencompass.readthedocs.io/en/latest/get_started/install.html) |
-[🤔Reporting Issues](https://github.com/InternLM/opencompass/issues/new/choose)
+[🌐Website](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
+[🤗Hugging Face](https://huggingface.co/datasets/ceval/ceval-exam) |
+[📃Paper](https://arxiv.org/abs/2305.08322)
 
 English | [简体中文](README_zh-CN.md)
 
