@@ -70,7 +70,7 @@ We divide the evaluation into **Answer Only** and **Chain of Thought**. For exam
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-#### Few-shot
+#### Five-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
 | ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
 | Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
@@ -128,7 +128,7 @@ We divide the evaluation into **Answer Only** and **Chain of Thought**. For exam
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-#### Few-shot
+#### Five-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
 | ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
 | Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
