@@ -10,9 +10,9 @@ You first need to prepare a UTF-8 encoded JSON file and write it in the followin
         ...
     },
     
-    "学科名称":{
-    "0":"答案1",
-    "1":"答案2",
+    "Subject Name":{
+    "0":"Answer1",
+    "1":"Answer2",
     ...
     }
     ....
