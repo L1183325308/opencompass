@@ -22,9 +22,9 @@ sys.path.insert(0, os.path.abspath('../../'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'SUFECN'
-copyright = '2023, SUFECN'
-author = 'SUFECN Authors'
+project = 'SUFE-AIFLM'
+copyright = '2023, SUFE-AIFLM'
+author = 'SUFE-AIFLM Authors'
 
 # The full version, including alpha/beta/rc tags
 # version_file = '../../opencompass/version.py'
@@ -117,7 +117,7 @@ html_js_files = [
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'opencompassdoc'
+htmlhelp_basename = 'SUFE-AIFLMdoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -139,7 +139,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (root_doc, 'opencompass.tex', 'OpenCompass Documentation', author,
+    (root_doc, 'SUFE-AIFLM.tex', 'SUFE-AIFLM Documentation', author,
      'manual'),
 ]
 
@@ -147,7 +147,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(root_doc, 'opencompass', 'OpenCompass Documentation', [author],
+man_pages = [(root_doc, 'SUFE-AIFLM', 'SUFE-AIFLM Documentation', [author],
               1)]
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -156,8 +156,8 @@ man_pages = [(root_doc, 'opencompass', 'OpenCompass Documentation', [author],
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (root_doc, 'opencompass', 'OpenCompass Documentation', author,
-     'OpenCompass Authors', 'AGI evaluation toolbox and benchmark.',
+    (root_doc, 'SUFE-AIFLM', 'SUFE-AIFLM Documentation', author,
+     'SUFE-AIFLM Authors', 'AGI evaluation toolbox and benchmark.',
      'Miscellaneous'),
 ]
 
