@@ -24,7 +24,7 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 ## Contents
 
 - [Performance Leaderboard](#Performance-leaderboard)
-  - [Answer only](#Answer-only)
+  - [Answer Only](#Answer-only)
   - [CoT](#CoT (chain-of-thought))
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
@@ -40,7 +40,7 @@ We divide the evaluation into **Answer Only** and **Chain of Thought**. For exam
 下面是模型的zero-shot和five-shot准确率:
 
 
-### Answer only
+### Answer Only
 
 #### Zero-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
@@ -70,7 +70,7 @@ We divide the evaluation into **Answer Only** and **Chain of Thought**. For exam
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-#### Five-shot
+#### Few-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
 | ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
 | Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
@@ -128,7 +128,7 @@ We divide the evaluation into **Answer Only** and **Chain of Thought**. For exam
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-#### Five-shot
+#### Few-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
 | ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
 | Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
