@@ -33,7 +33,7 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 - [How to Submit](#How-to-submit)
 - [Citation](#Citation)
 
-## Performance leaderboard
+## Performance Leaderboard
 
 We divide the evaluation into **Answer Only** and **Chain of Thought**. For examples of prompts for both methods, please refer to [Zero-Shot for Answer only](/docs/en/prompt/zero_shot.md), [few-shot for Answer only](/docs/en/prompt/few_shot.md), and [Chain of Thought](/docs/en/prompt/cot.md).
 
