@@ -82,7 +82,7 @@ html_theme_options = {
     'menu': [
         {
             'name': 'GitHub',
-            'url': 'https://github.com/L1183325308/opencompass'
+            'url': 'https://github.com/SUFE-AIFLM/FinEval'
         },
     ],
     # Specify the language of shared menu
