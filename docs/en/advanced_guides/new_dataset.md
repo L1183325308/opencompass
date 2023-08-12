@@ -11,7 +11,7 @@
 		"类别"
 		]
 	}
-​	  The following is an example of tax law in subject_mapping.json:
+​	  The following is an example of tax law in `subject_mapping.json`:
 
 ```
 {
