@@ -2,7 +2,7 @@
 
 ## 1. Modify subject_mapping.json
 
-​		The following is the format in subject_mapping.json：
+​		The following is the format in `subject_mapping.json`：
 
 	{
 		"filename":[
@@ -23,7 +23,7 @@
 }
 ```
 
-If you need to add a new dataset and its category, modify the subject_mapping.json file according to the above format
+If you need to add a new dataset and its category, modify the `subject_mapping.json` file according to the above format
 
 ## 2. Determine the format of the data dataset
 
