@@ -2,7 +2,7 @@
 
 ## 1. 修改subject_mapping.json
 
-​		以下为subject_mapping.json中格式：
+​		以下为`subject_mapping.json`中格式：
 
 	{
 		"filename":[
