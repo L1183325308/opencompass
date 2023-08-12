@@ -164,7 +164,7 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
  ```
 
 ```python
-    git clone https://github.com/caiweige/FinEval
+    git clone https://github.com/SUFE-AIFLM/FinEval
     cd FinEval
     pip install -r requirements.txt
     
