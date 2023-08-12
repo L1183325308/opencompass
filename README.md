@@ -35,7 +35,7 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 
 ## Performance Leaderboard
 
-We divide the evaluation into **Answer Only** and **Chain of Thought**. For examples of prompts for both methods, please refer to [Zero-Shot for Answer only](/docs/en/prompt/zero_shot.md), [few-shot for Answer only](/docs/en/prompt/few_shot.md), and [Chain of Thought](/docs/en/prompt/cot.md).
+We divide the evaluation into **Answer Only** and **Chain of Thought**. For examples of prompts for both methods, please refer to [zero-shot for Answer Only](/docs/en/prompt/zero_shot.md), [few-shot for Answer Only](/docs/en/prompt/few_shot.md), and [Chain of Thought](/docs/en/prompt/cot.md).
 
 下面是模型的zero-shot和five-shot准确率:
 
