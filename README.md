@@ -166,7 +166,7 @@ Below are the steps for quick installation. For detailed instructions, please re
  ```
 
 ```python
-    git clone https://github.com/caiweige/FinEval
+    git clone https://github.com/SUFE-AIFLM/FinEval
     cd FinEval
     pip install -r requirements.txt
     
