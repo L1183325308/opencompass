@@ -3,7 +3,7 @@
   <br />
   <br />
 
-[![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
 
 [🌐网站](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
 [🤗Hugging Face](https://huggingface.co/datasets/ceval/ceval-exam) |
