@@ -34,4 +34,4 @@
         "Custom model": (model loading method, tokenizer loading method)
     }
     ```
- 3. Add your new model loading logic in /code/evaluators/unify_evaluator.py.
+ 3. Add your new model loading logic in `/code/evaluators/unify_evaluator.py`.
