@@ -25,7 +25,7 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 
 - [Performance Leaderboard](#Performance-leaderboard)
   - [Answer Only](#Answer-only)
-  - [CoT](#CoT (chain-of-thought))
+  - [CoT](#CoT-(chain-of-thought))
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
 - [Dataset Preparation](#Dataset-Preparation)
