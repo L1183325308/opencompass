@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
 
 [🌐Website](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
-[🤗Hugging Face](https://huggingface.co/datasets/ceval/ceval-exam) |
+[🤗Hugging Face](https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval) |
 [📃Paper](https://arxiv.org/abs/2305.08322)
 
 English | [简体中文](README_zh-CN.md)
