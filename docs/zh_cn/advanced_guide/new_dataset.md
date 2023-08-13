@@ -11,7 +11,7 @@
 		"类别"
 		]
 	}
-​	  以下为subject_mapping.json中税法例子:
+​	  以下为`subject_mapping.json`中税法例子:
 
 ```
 {
