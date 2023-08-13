@@ -26,13 +26,6 @@ project = 'SUFE-AIFLM'
 copyright = '2023, SUFE-AIFLM'
 author = 'SUFE-AIFLM Authors'
 
-# The full version, including alpha/beta/rc tags
-# version_file = '../../opencompass/version.py'
-
-# def get_version():
-#     with open(version_file, 'r') as f:
-#         exec(compile(f.read(), version_file, 'exec'))
-#     return locals()['__version__']
 
 release = '0.5.0'
 
