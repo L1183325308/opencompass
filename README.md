@@ -25,7 +25,7 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 
 - [Performance Leaderboard](#Performance-leaderboard)
   - [Answer Only](#Answer-only)
-  - [CoT](#CoT-(chain-of-thought))
+  - [Chain of thought](#chain-of-thought)
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
 - [Dataset Preparation](#Dataset-Preparation)
@@ -98,7 +98,7 @@ We divide the evaluation into **Answer Only** and **Chain of Thought**. For exam
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-### CoT (chain-of-thought)
+### Chain of thought
 
 #### Zero-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
