@@ -22,7 +22,7 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 
 - [性能排行榜](#性能排行榜)
   - [仅预测答案](#仅预测答案)
-  - [思维链](#思维链 (chain-of-thought))
+  - [思维链](#思维链)
 - [安装](#安装)
 - [评测](#评测)
 - [准备数据集](#准备数据集)
@@ -96,7 +96,7 @@ FinEval是一个包含**金融、经济、会计和证书**等领域高质量多
 | moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
 
 
-### 思维链 (chain-of-thought)
+### 思维链
 
 #### Zero-shot
 | Model               | Finance | Accounting | Economy | Certificate | Average |
