@@ -2,6 +2,7 @@
 
 ## 1. AO（Answer-Only）
 AO zero-shot
+
 仅预测答案的zero-shot的prompt
 
 	下列有关组成部分重要性的说法中，错误的是____。
