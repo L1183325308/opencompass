@@ -2,10 +2,10 @@
 
 - 如果模型采用AutoModelForCausalLM,AutoTokenizer方式加载,指定model_type（模型名称）为auto，其余参数正常填写，即可加载新模型。
 
-- 如果模型采用其他方式加载(AutoModelForCausalLM,AutoTokenizer无法加载模型)，可修改/code/evaluators/unify_evaluator.py文件
+- 如果模型采用其他方式加载(AutoModelForCausalLM,AutoTokenizer无法加载模型)，可修改`/code/evaluators/unify_evaluator.py`文件
 
 
-1. 自定义增加模型加载信息,修改/code/evaluators/unify_evaluator.py文件，在transformers处进行导入此参数：
+1. 自定义增加模型加载信息,修改`/code/evaluators/unify_evaluator.py`文件，在transformers处进行导入此参数：
 
     ```
     from transformers import (
@@ -35,4 +35,4 @@
     }
     ```
 
-3. 在/code/evaluators/unify_evaluator.py中加入您新的模型加载逻辑。
+3. 在`/code/evaluators/unify_evaluator.py`中加入您新的模型加载逻辑。
