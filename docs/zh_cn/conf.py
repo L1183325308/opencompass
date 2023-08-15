@@ -80,18 +80,18 @@ html_theme_path = [pytorch_sphinx_theme.get_html_theme_path()]
 # further.  For a list of options available for each theme, see the
 # documentation.
 # yapf: disable
-html_theme_options = {
-    'menu': [
-        {
-            'name': 'GitHub',
-            'url': 'https://github.com/SUFE-AIFLM/FinEval'
-        },
-    ],
-    # Specify the language of shared menu
-    'menu_lang': 'en',
-    # Disable the default edit on GitHub
-    'default_edit_on_github': False,
-}
+# html_theme_options = {
+#     'menu': [
+#         {
+#             'name': 'GitHub',
+#             'url': 'https://github.com/SUFE-AIFLM/FinEval'
+#         },
+#     ],
+#     # Specify the language of shared menu
+#     'menu_lang': 'en',
+#     # Disable the default edit on GitHub
+#     'default_edit_on_github': False,
+# }
 # yapf: enable
 
 # Add any paths that contain custom static files (such as style sheets) here,
